@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'assi-one';
+  counter: number;
+  eventHandler(event: {counter: number}) {
+    this.counter = event.counter;
+  }
 }

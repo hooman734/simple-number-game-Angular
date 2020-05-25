@@ -1,0 +1,5 @@
+<p>game-control works!</p>
+<hr>
+<button (click)="onClickStart()">Start game</button>
+<button (click)="onClickStop()" *ngIf="flag">Stop game</button>
+<button (click)="onClickStop()" *ngIf="!flag">Restart game</button>
